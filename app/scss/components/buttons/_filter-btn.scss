@@ -1,0 +1,47 @@
+.filter-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px 24px 18px 18px;
+    font-family: 'Signika', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $dark-900;
+    text-align: left;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $primary-600;
+    transition: all 0.4s;
+
+    &__img {
+        display: block;
+        width: 18px;
+        height: 11px;
+        fill: $primary-600;
+        transform: rotate(180deg);
+        transition: transform 0.4s;
+
+        &.active {
+            transform: rotate(360deg);
+        }
+    }
+
+    &:hover {
+        color: $primary-600;
+        background-color: $secondary-100;
+    }
+
+    &:active {
+        box-shadow: inset 0px 10px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    &:focus {
+        outline-style: none;
+        outline-width: 0px;
+        outline-color: none;
+        border: 1px solid $secondary;
+        box-shadow: inset 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
+    }
+
+}

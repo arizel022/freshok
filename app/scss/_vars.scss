@@ -1,0 +1,37 @@
+// font-family: 'Signika', sans-serif;
+// font-weight: 300;
+// font-weight: 400;
+// font-weight: 600;
+// font-weight: 700;
+
+$primary: #fff;
+$primary-100: #f6f6f6;
+$primary-600: #c1c1c1;
+
+$secondary: #63a60f;
+$secondary-100: #eff6e7;
+$secondary-200: #e0edcf;
+
+$dark-500: #505050;
+$dark-800: #31352b;
+$dark-900: #121212;
+
+$accent-yellow: #ffb800;
+$accent-orange: #ff7a00;
+$accent-red: #cf3e3b;
+
+%checkbox-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+%radio-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}

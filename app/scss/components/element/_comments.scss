@@ -1,0 +1,52 @@
+.comments {
+    border-bottom: 1px solid $primary-600;
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+
+    }
+
+    &:last-child {
+        border-bottom: none;
+
+        .comments__descr {
+            margin-bottom: 0;
+        }
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    &__img {
+        margin-right: 24px;
+        border-radius: 50%;
+        overflow: hidden;
+        object-fit: cover;
+    }
+
+    &__top-inner {
+        margin-right: auto;
+    }
+
+    &__name {
+        margin-bottom: 6px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: $dark-900;
+    }
+
+    &__date {
+        color: #4f4f4f;
+    }
+
+    &__descr {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+}

@@ -1,0 +1,32 @@
+.user-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+    transition: all 0.4s;
+
+    &__img {
+        display: block;
+        width: 32px;
+        height: 32px;
+        fill: $primary;
+    }
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    &:active {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    &:focus {
+        box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.5);
+    }
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+}

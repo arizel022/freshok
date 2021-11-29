@@ -1,0 +1,35 @@
+.shop {
+    position: relative;
+    padding: 48px 0 72px;
+    z-index: 0;
+
+    &__title {
+        text-transform: none;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__filters {
+        max-width: 300px;
+        width: 100%;
+        margin-right: 30px;
+
+        @media (max-width: 992px) {
+            display: none;
+        }
+
+    }
+
+    &__filter {
+        margin-bottom: 30px;
+        border: 1px solid $primary-600;
+        border-radius: 6px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+}

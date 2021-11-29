@@ -1,0 +1,19 @@
+.product-bottom {
+    position: relative;
+    padding-bottom: 72px;
+
+    &__title {
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+
+    &__slider {
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+
+    &__slider-item {
+        margin-left: 6px;
+    }
+
+}
