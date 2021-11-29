@@ -1,0 +1,42 @@
+.your-rating {
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        margin-right: 13px;
+        font-size: 16px;
+        line-height: 1.3;
+        color: #121212;
+    }
+
+
+    &__checkbox-img {
+        display: block;
+        width: 16px;
+        height: 16px;
+        fill: $primary-600;
+    }
+
+    &__input {
+        margin-right: 4px;
+        @extend %checkbox-hidden;
+
+        &:checked+.your-rating__checkbox {
+
+            .your-rating__checkbox-img {
+                fill: #FFB800;
+            }
+        }
+    }
+
+    &__checkbox {
+        display: inline-block;
+        margin-right: 4px;
+        cursor: pointer;
+
+    }
+
+}

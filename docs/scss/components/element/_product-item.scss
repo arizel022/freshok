@@ -1,0 +1,121 @@
+.product-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0 63px;
+
+    &__slider {
+        max-width: 630px;
+        max-height: 558px;
+        border: 1px solid #C1C1C1;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin-right: 31px;
+        cursor: pointer;
+
+    }
+
+    &__slide-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    & .slick-prev,
+    .slick-next {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-150%);
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border: 1px solid transparent;
+        background-color: transparent;
+        border-radius: 6px;
+        cursor: pointer;
+        z-index: 1;
+        transition: all 0.4s;
+
+        &:hover {
+            border: 1px solid $primary-600;
+            background-color: $primary-100;
+        }
+
+        &:active {
+            border: 1px solid $secondary-200;
+            background-color: $secondary-100;
+        }
+
+        &:focus {
+            border: 1px solid $secondary-200;
+            background-color: $secondary-100;
+            box-shadow: 0px 0px 0px 4px rgba(99, 166, 14, 0.5);
+        }
+
+        & img {
+            width: 19px;
+            height: 32px;
+            margin: 0 auto;
+        }
+    }
+
+    & .slick-prev {
+        left: 32px;
+    }
+
+    & .slick-next {
+        right: 32px;
+    }
+
+    &__content {
+        width: 100%;
+    }
+
+    &__star {
+        margin-left: 12px;
+        margin-right: auto;
+    }
+
+    &__conditions {
+        padding-bottom: 32px;
+    }
+
+    &__conditions-title {
+        font-size: 18px;
+        line-height: 1.2;
+        padding-bottom: 18px;
+        border-bottom: 1px solid $primary-600;
+    }
+
+    &__conditions-text {
+        display: block;
+        margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 18px;
+        }
+    }
+
+    &__conditions-link {
+        position: relative;
+        line-height: 1.2;
+        color: $secondary;
+        padding-bottom: 4px;
+        transition: all 0.4s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+
+        &:active {
+            color: $primary-600;
+        }
+
+        &:focus::before {
+            color: #477c06;
+            outline-color: #477c06;
+        }
+
+    }
+
+
+}

@@ -1,0 +1,66 @@
+.jq-selectbox {
+    position: relative;
+    z-index: 0;
+
+    &__select {
+        display: flex;
+        align-items: center;
+        height: 47px;
+        border: 1px solid $primary-600;
+        border-radius: 3px;
+        background: #fff;
+        box-shadow: none;
+        font: inherit;
+        color: $dark-500;
+        text-shadow: none;
+        transition: all 0.4s;
+
+        &:hover {
+            background: $primary;
+            box-shadow: 0px 0px 0px 3px #E0EDCF;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 6px;
+        }
+    }
+
+    &__trigger {
+        top: 8px;
+        border-left: none;
+
+    }
+
+    &__dropdown {
+        background: #FFFFFF;
+        border: 1px solid #C1C1C1;
+        box-sizing: border-box;
+        border-radius: 0px 0px 6px 6px;
+
+        li:hover {
+            background-color: #eff6e7;
+            color: $secondary;
+        }
+    }
+
+
+    &__trigger-arrow {
+        position: absolute;
+        top: 14px;
+        right: 15px;
+        width: 11px;
+        height: 6px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        background-image: url('../../../images/icons/chevron-down.svg');
+        background-repeat: no-repeat;
+
+    }
+
+    li.selected {
+        background-color: #eff6e7;
+        color: $secondary;
+    }
+
+}

@@ -1,0 +1,44 @@
+.breadcrumbs {
+    padding: 7px 0;
+    background-color: $primary-100;
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        position: relative;
+        margin-right: 18px;
+        color: $dark-500;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            height: 10px;
+            top: 22px;
+            right: -11px;
+            background-image: url('../../../images/icons/arrows-right.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        &:last-child {
+            margin-right: 0;
+            color: $secondary;
+
+            &::after {
+                display: none;
+
+            }
+        }
+    }
+
+    &__link {
+        display: block;
+        padding: 16px 0;
+        color: inherit;
+    }
+
+}

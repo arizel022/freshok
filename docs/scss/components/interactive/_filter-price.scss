@@ -1,0 +1,93 @@
+.filter-price {
+
+    &__form {
+        padding: 18px;
+        font-size: 18px;
+        line-height: 1.2;
+        color: $dark-500;
+
+        &.active {
+            display: none;
+        }
+    }
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+        margin-bottom: 24px;
+
+    }
+
+    &__from,
+    &__to {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 40px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1;
+        color: $dark-500;
+        background-color: #F6F6F6;
+        border: 1px solid #C1C1C1;
+        border-radius: 3px;
+
+        &::before,
+        &::after {
+            font-family: 'Signika', sans-serif;
+            font-size: 16px;
+            line-height: 1.2;
+            color: $primary-600;
+        }
+
+        &:focus {
+            outline: 0;
+            background: #F6F6F6;
+            border: 1px solid #C1C1C1;
+            box-shadow: 0px 0px 0px 3px #E0EDCF;
+        }
+    }
+
+
+    &__from {
+
+        &::before {
+            content: 'от';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -26px;
+        }
+
+        &::after {
+            content: '\20BD';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -16px;
+        }
+    }
+
+    &__to {
+
+        &::before {
+            content: 'до';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -26px;
+        }
+
+        &::after {
+            content: '\20BD';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -16px;
+        }
+    }
+}

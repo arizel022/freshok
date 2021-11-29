@@ -1,0 +1,151 @@
+.shop-content {
+    width: 100%;
+
+    &__filter-label:first-child {
+        margin-right: 15px;
+    }
+
+    &__filter {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 48px;
+    }
+
+    &__filter-buttons {
+        display: flex;
+    }
+
+    &__grid-btn,
+    &__filter-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 47px;
+        height: 47px;
+        margin-left: 15px;
+        background-color: $primary-100;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        transition: all 0.4s;
+
+        &:hover {
+            border: 1px solid $primary-600;
+        }
+
+
+        &:focus {
+            outline-style: none;
+            outline-width: 0px;
+            outline-color: none;
+            border: 1px solid $secondary;
+            box-shadow: 0px 0px 0px 4px rgba(207, 255, 207, 0.6);
+        }
+
+        &.active {
+            .shop-content__grid-img {
+                fill: $secondary;
+            }
+        }
+    }
+
+    &__filter-btn {
+        display: none;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    &__filter-img {
+        display: block;
+        width: 35px;
+        height: 35px;
+        fill: $secondary;
+    }
+
+    &__grid-img {
+        display: block;
+        width: 35px;
+        height: 35px;
+        fill: $primary-600;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        row-gap: 30px;
+        column-gap: 30px;
+        margin-bottom: 48px;
+
+        &.active {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media (max-width: 1200px) {
+
+        &__inner {
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+
+        .card {
+            &__quantity {
+                margin-right: 4px;
+            }
+
+            &__title--long {
+                display: none;
+            }
+
+            &__title--short {
+                display: block;
+            }
+
+            &__img {
+                height: auto;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+
+        &__filter {
+            justify-content: flex-start;
+            margin-bottom: 30px;
+        }
+
+        &__filter-btn {
+            display: flex;
+        }
+
+        &__filter-buttons {
+            display: none;
+        }
+
+        &__bottom {
+            flex-direction: column;
+            height: 119px;
+        }
+
+    }
+
+    @media (max-width: 576px) {
+
+        &__inner {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 5px;
+            column-gap: 5px;
+
+        }
+
+        &__filter-label:first-child {
+            margin-right: 10px;
+        }
+    }
+}

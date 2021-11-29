@@ -1,0 +1,53 @@
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'vars';
+@import 'global';
+
+@import 'components/section/header';
+@import 'components/section/intro';
+@import 'components/section/advantages';
+@import 'components/section/banners';
+@import 'components/section/brands';
+@import 'components/section/blog';
+@import 'components/section/footer';
+@import 'components/section/shop';
+@import 'components/section/shop-content';
+@import 'components/section/product-bottom';
+@import 'components/section/product-tabs';
+@import 'components/section/modal-slider';
+
+@import 'components/element/card';
+@import 'components/element/basket';
+@import 'components/element/side-menu';
+@import 'components/element/filter-side';
+@import 'components/element/contacts';
+@import 'components/element/star';
+@import 'components/element/product-item';
+@import 'components/element/comments';
+@import 'components/element/your-rating';
+@import 'components/element/feedback-form';
+
+@import 'components/interactive/search';
+@import 'components/interactive/product-filter';
+@import 'components/interactive/subscribe';
+@import 'components/interactive/social';
+@import 'components/interactive/breadcrumbs';
+@import 'components/interactive/filter-category';
+@import 'components/interactive/filter-offer';
+@import 'components/interactive/filter-brand';
+@import 'components/interactive/filter-price';
+@import 'components/interactive/range-price';
+@import 'components/interactive/select';
+@import 'components/interactive/pagination';
+
+
+@import 'components/buttons/menu-btn';
+@import 'components/buttons/btn';
+@import 'components/buttons/user-btn';
+@import 'components/buttons/favorites-btn';
+@import 'components/buttons/search-btn';
+@import 'components/buttons/basket-btn';
+@import 'components/buttons/close-btn';
+@import 'components/buttons/filter-btn';
+@import 'components/buttons/arrow-btn';

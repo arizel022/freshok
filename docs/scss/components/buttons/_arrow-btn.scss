@@ -1,0 +1,58 @@
+.arrow-btn {
+    width: 60px;
+    height: 60px;
+    background-color: $primary;
+    border: 1px solid $primary-600;
+    border-radius: 6px;
+    transition: all 0.4s;
+
+    &__wrapper {
+        position: absolute;
+        top: 0;
+        right: 16px;
+        display: flex;
+        justify-content: space-between;
+        width: 150px;
+
+    }
+
+    &__icon {
+        width: 19px;
+        height: 32px;
+        fill: $dark-500;
+    }
+
+    &--light {
+        border: 1px solid transparent;
+
+    }
+
+
+    &:hover {
+        background-color: $secondary-200;
+        border: 1px solid $secondary;
+
+        .arrow-btn__icon {
+            fill: $secondary;
+        }
+    }
+
+    &:active {
+        background-color: $secondary-200;
+        border: 1px solid $secondary;
+
+        .arrow-btn__icon {
+            fill: $secondary;
+        }
+    }
+
+    &:focus {
+        background-color: $secondary-200;
+        border: 1px solid $secondary;
+        box-shadow: 0px 0px 0px 4px #e0edcf;
+
+        .arrow-btn__icon {
+            fill: $secondary;
+        }
+    }
+}
